@@ -1,0 +1,6 @@
+@PlataformaAED_HostAddress = http://localhost:5105
+
+GET {{PlataformaAED_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

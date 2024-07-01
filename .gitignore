@@ -1,0 +1,9 @@
+.vs
+
+# Build Folders (you can keep bin/ if you'd like to check-in binaries)
+bin/
+obj/
+/PlataformaAED.model/obj
+/PlataformaAED.model/bin
+/PlataformaAED.data/obj
+/PlataformaAED.data/bin
