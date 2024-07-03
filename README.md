@@ -350,23 +350,23 @@ Documentation:
 
 Database Setup Scripts:
 
-  CREATE SCHEMA `reservationsdb`
-  USE `reservationsdb`;
+    CREATE SCHEMA `reservationsdb`
+    USE `reservationsdb`;
 
-  CREATE TABLE SportAreaTable (
-      sa_id INT PRIMARY KEY AUTO_INCREMENT,
-      sa_location VARCHAR(255),
-      sa_customer_name VARCHAR(255)
-  );
+    CREATE TABLE SportAreaTable (
+        sa_id INT PRIMARY KEY AUTO_INCREMENT,
+        sa_location VARCHAR(255),
+        sa_customer_name VARCHAR(255)
+    );
 
-  CREATE TABLE ResTable (
-      res_id INT PRIMARY KEY AUTO_INCREMENT,
-      res_name VARCHAR(255),
-      res_customer VARCHAR(255),
-      res_date VARCHAR(255),
-      res_sportArea INT,
-      FOREIGN KEY (res_sportArea) REFERENCES SportAreaTable(sa_id)
-  );
+    CREATE TABLE ResTable (
+        res_id INT PRIMARY KEY AUTO_INCREMENT,
+        res_name VARCHAR(255),
+        res_customer VARCHAR(255),
+        res_date VARCHAR(255),
+        res_sportArea INT,
+        FOREIGN KEY (res_sportArea) REFERENCES SportAreaTable(sa_id)
+    );
 
 
   INSERT INTO `sportareatable` VALUES (1,'Plaza 2-C','John Doe'),(3,'Plaza 5-D','James Doe');
