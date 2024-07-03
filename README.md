@@ -392,10 +392,10 @@ Requirements:
     https://www.youtube.com/watch?v=-X4lzcC6_Sg
 
 MySQL Database Setup:
-  login: root
-  password: root
+    login: root
+    password: root
 
-  1. https://www.youtube.com/watch?v=u96rVINbAUI
+    https://www.youtube.com/watch?v=u96rVINbAUI
 
 
 Once everything is installed and the database is configured and running, open the project in Visual Studio and execute it. The project includes an interface called SwaggerUI which allows you to test and make requests to the API, as well as view the schemas.
