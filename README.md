@@ -16,355 +16,361 @@ Functional Requirements:
 
 ## Content Table
 1. [Endpoint Documentation](#EndpointDocumentation)
-2. [DatabaseStructures](#DatabaseStructures)
+2. [Database Scripts](#DatabaseScripts)
 3. [Installation and Configuration Instructions](#InstallationandConfigurationInstructions)
 
-## Endpoint Documentation
+## EndpointDocumentation
 
-{
-  "openapi": "3.0.1",
-  "info": {
-    "title": "PlataformaAED",
-    "version": "1.0"
-  },
-  "paths": {
-    "/api/Reserv": {
-      "get": {
-        "tags": [
-          "Reserv"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Reserv"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Reserv"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Reserv"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Reserv"
-              }
+Documentation:
+  {
+    "openapi": "3.0.1",
+    "info": {
+      "title": "PlataformaAED",
+      "version": "1.0"
+    },
+    "paths": {
+      "/api/Reserv": {
+        "get": {
+          "tags": [
+            "Reserv"
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Reserv"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Reserv"
+        "post": {
+          "tags": [
+            "Reserv"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reserv"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reserv"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reserv"
+                }
               }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Reserv"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Reserv"
-              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Success"
+        "put": {
+          "tags": [
+            "Reserv"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reserv"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reserv"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reserv"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "Reserv"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
           }
         }
       },
-      "delete": {
-        "tags": [
-          "Reserv"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+      "/api/Reserv/id": {
+        "get": {
+          "tags": [
+            "Reserv"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
             }
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
+        }
+      },
+      "/api/SportArea": {
+        "get": {
+          "tags": [
+            "SportArea"
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "SportArea"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SportArea"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SportArea"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SportArea"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "SportArea"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SportArea"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SportArea"
+                }
+              },
+              "application/*+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SportArea"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "SportArea"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
+          }
+        }
+      },
+      "/api/SportArea/id": {
+        "get": {
+          "tags": [
+            "SportArea"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "schema": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success"
+            }
           }
         }
       }
     },
-    "/api/Reserv/id": {
-      "get": {
-        "tags": [
-          "Reserv"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
+    "components": {
+      "schemas": {
+        "Reserv": {
+          "required": [
+            "res_customer",
+            "res_date",
+            "res_name"
+          ],
+          "type": "object",
+          "properties": {
+            "res_id": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "res_name": {
+              "maxLength": 255,
+              "minLength": 1,
+              "type": "string"
+            },
+            "res_customer": {
+              "maxLength": 255,
+              "minLength": 1,
+              "type": "string"
+            },
+            "res_date": {
+              "maxLength": 255,
+              "minLength": 1,
+              "type": "string"
+            },
+            "res_sportArea": {
               "type": "integer",
               "format": "int32"
             }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/SportArea": {
-      "get": {
-        "tags": [
-          "SportArea"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "SportArea"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SportArea"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SportArea"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SportArea"
-              }
-            }
-          }
+          },
+          "additionalProperties": false
         },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "SportArea"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SportArea"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SportArea"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SportArea"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "SportArea"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
+        "Reservation": {
+          "type": "object",
+          "properties": {
+            "res_id": {
               "type": "integer",
               "format": "int32"
+            },
+            "res_name": {
+              "type": "string",
+              "nullable": true
+            },
+            "res_location": {
+              "type": "string",
+              "nullable": true
+            },
+            "res_date": {
+              "type": "string",
+              "nullable": true
+            },
+            "res_customer": {
+              "type": "string",
+              "nullable": true
             }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
-    },
-    "/api/SportArea/id": {
-      "get": {
-        "tags": [
-          "SportArea"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
+          },
+          "additionalProperties": false
+        },
+        "SportArea": {
+          "required": [
+            "sa_customer_name",
+            "sa_location"
+          ],
+          "type": "object",
+          "properties": {
+            "sa_id": {
               "type": "integer",
               "format": "int32"
+            },
+            "sa_location": {
+              "maxLength": 255,
+              "minLength": 1,
+              "type": "string"
+            },
+            "sa_customer_name": {
+              "maxLength": 255,
+              "minLength": 1,
+              "type": "string"
             }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
+          },
+          "additionalProperties": false
         }
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "Reserv": {
-        "required": [
-          "res_customer",
-          "res_date",
-          "res_name"
-        ],
-        "type": "object",
-        "properties": {
-          "res_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "res_name": {
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          },
-          "res_customer": {
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          },
-          "res_date": {
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          },
-          "res_sportArea": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Reservation": {
-        "type": "object",
-        "properties": {
-          "res_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "res_name": {
-            "type": "string",
-            "nullable": true
-          },
-          "res_location": {
-            "type": "string",
-            "nullable": true
-          },
-          "res_date": {
-            "type": "string",
-            "nullable": true
-          },
-          "res_customer": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "SportArea": {
-        "required": [
-          "sa_customer_name",
-          "sa_location"
-        ],
-        "type": "object",
-        "properties": {
-          "sa_id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "sa_location": {
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          },
-          "sa_customer_name": {
-            "maxLength": 255,
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
       }
     }
   }
-}
 
 
 
-## #DatabaseStructures
+## DatabaseScripts
 
-CREATE SCHEMA `reservationsdb`
+Database Setup Scripts:
 
-CREATE TABLE SportAreaTable (
-    sa_id INT PRIMARY KEY AUTO_INCREMENT,
-    sa_location VARCHAR(255),
-    sa_customer_name VARCHAR(255)
-);
+  CREATE SCHEMA `reservationsdb`
+  USE `reservationsdb`;
 
-CREATE TABLE ResTable (
-    res_id INT PRIMARY KEY AUTO_INCREMENT,
-    res_name VARCHAR(255),
-    res_customer VARCHAR(255),
-    res_date VARCHAR(255),
-    res_sportArea INT,
-    FOREIGN KEY (res_sportArea) REFERENCES SportAreaTable(sa_id)
-);
+  CREATE TABLE SportAreaTable (
+      sa_id INT PRIMARY KEY AUTO_INCREMENT,
+      sa_location VARCHAR(255),
+      sa_customer_name VARCHAR(255)
+  );
+
+  CREATE TABLE ResTable (
+      res_id INT PRIMARY KEY AUTO_INCREMENT,
+      res_name VARCHAR(255),
+      res_customer VARCHAR(255),
+      res_date VARCHAR(255),
+      res_sportArea INT,
+      FOREIGN KEY (res_sportArea) REFERENCES SportAreaTable(sa_id)
+  );
 
 
+  INSERT INTO `sportareatable` VALUES (1,'Plaza 2-C','John Doe'),(3,'Plaza 5-D','James Doe');
+  INSERT INTO `restable` VALUES (1,'string','string','string',1),(3,'test','test','test',3);
 
 
 ## InstallationandConfigurationInstructions
@@ -386,29 +392,11 @@ Requirements:
     https://www.youtube.com/watch?v=-X4lzcC6_Sg
 
 MySQL Database Setup:
+  login: root
+  password: root
 
-    1. https://www.youtube.com/watch?v=u96rVINbAUI
+  1. https://www.youtube.com/watch?v=u96rVINbAUI
 
-    2. Once inside Workbench, create the schema:
-    
-        CREATE SCHEMA `reservationsdb` ;
-
-    3. Inside this schema, create the tables:
-
-        CREATE TABLE SportAreaTable (
-         INT PRIMARY KEY AUTO_INCREMENT,
-        sa_location VARCHAR(255),
-        sa_customer_name VARCHAR(255)
-    );
-
-    CREATE TABLE ResTable (
-        res_id INT PRIMARY KEY AUTO_INCREMENT,
-        res_name VARCHAR(255),
-        res_customer VARCHAR(255),
-        res_date VARCHAR(255),
-        res_sportArea INT,
-        FOREIGN KEY (res_sportArea) REFERENCES SportAreaTable(sa_id)
-    );
 
 Once everything is installed and the database is configured and running, open the project in Visual Studio and execute it. The project includes an interface called SwaggerUI which allows you to test and make requests to the API, as well as view the schemas.
 
