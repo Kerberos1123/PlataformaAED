@@ -392,6 +392,7 @@ Requirements:
     https://www.youtube.com/watch?v=-X4lzcC6_Sg
 
 MySQL Database Setup:
+
     login: root
     password: root
 
