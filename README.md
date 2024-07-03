@@ -21,328 +21,328 @@ Functional Requirements:
 
 ## EndpointDocumentation
 
-Documentation:
-  {
-    "openapi": "3.0.1",
-    "info": {
-      "title": "PlataformaAED",
-      "version": "1.0"
-    },
-    "paths": {
-      "/api/Reserv": {
-        "get": {
-          "tags": [
-            "Reserv"
-          ],
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
+    Documentation:
+      {
+        "openapi": "3.0.1",
+        "info": {
+          "title": "PlataformaAED",
+          "version": "1.0"
         },
-        "post": {
-          "tags": [
-            "Reserv"
-          ],
-          "requestBody": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Reserv"
+        "paths": {
+          "/api/Reserv": {
+            "get": {
+              "tags": [
+                "Reserv"
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              }
+            },
+            "post": {
+              "tags": [
+                "Reserv"
+              ],
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Reserv"
+                    }
+                  },
+                  "text/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Reserv"
+                    }
+                  },
+                  "application/*+json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Reserv"
+                    }
+                  }
                 }
               },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Reserv"
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              }
+            },
+            "put": {
+              "tags": [
+                "Reserv"
+              ],
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Reserv"
+                    }
+                  },
+                  "text/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Reserv"
+                    }
+                  },
+                  "application/*+json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Reserv"
+                    }
+                  }
                 }
               },
-              "application/*+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Reserv"
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              }
+            },
+            "delete": {
+              "tags": [
+                "Reserv"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "query",
+                  "schema": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success"
                 }
               }
             }
           },
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
-        },
-        "put": {
-          "tags": [
-            "Reserv"
-          ],
-          "requestBody": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Reserv"
+          "/api/Reserv/id": {
+            "get": {
+              "tags": [
+                "Reserv"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "query",
+                  "schema": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
                 }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Reserv"
-                }
-              },
-              "application/*+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Reserv"
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success"
                 }
               }
             }
           },
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
-        },
-        "delete": {
-          "tags": [
-            "Reserv"
-          ],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "schema": {
-                "type": "integer",
-                "format": "int32"
+          "/api/SportArea": {
+            "get": {
+              "tags": [
+                "SportArea"
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
               }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
-        }
-      },
-      "/api/Reserv/id": {
-        "get": {
-          "tags": [
-            "Reserv"
-          ],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "schema": {
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
-        }
-      },
-      "/api/SportArea": {
-        "get": {
-          "tags": [
-            "SportArea"
-          ],
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
-        },
-        "post": {
-          "tags": [
-            "SportArea"
-          ],
-          "requestBody": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SportArea"
+            },
+            "post": {
+              "tags": [
+                "SportArea"
+              ],
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/SportArea"
+                    }
+                  },
+                  "text/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/SportArea"
+                    }
+                  },
+                  "application/*+json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/SportArea"
+                    }
+                  }
                 }
               },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SportArea"
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              }
+            },
+            "put": {
+              "tags": [
+                "SportArea"
+              ],
+              "requestBody": {
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/SportArea"
+                    }
+                  },
+                  "text/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/SportArea"
+                    }
+                  },
+                  "application/*+json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/SportArea"
+                    }
+                  }
                 }
               },
-              "application/*+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SportArea"
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              }
+            },
+            "delete": {
+              "tags": [
+                "SportArea"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "query",
+                  "schema": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success"
                 }
               }
             }
           },
-          "responses": {
-            "200": {
-              "description": "Success"
+          "/api/SportArea/id": {
+            "get": {
+              "tags": [
+                "SportArea"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "query",
+                  "schema": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Success"
+                }
+              }
             }
           }
         },
-        "put": {
-          "tags": [
-            "SportArea"
-          ],
-          "requestBody": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SportArea"
+        "components": {
+          "schemas": {
+            "Reserv": {
+              "required": [
+                "res_customer",
+                "res_date",
+                "res_name"
+              ],
+              "type": "object",
+              "properties": {
+                "res_id": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "res_name": {
+                  "maxLength": 255,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "res_customer": {
+                  "maxLength": 255,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "res_date": {
+                  "maxLength": 255,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "res_sportArea": {
+                  "type": "integer",
+                  "format": "int32"
                 }
               },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SportArea"
+              "additionalProperties": false
+            },
+            "Reservation": {
+              "type": "object",
+              "properties": {
+                "res_id": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "res_name": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "res_location": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "res_date": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "res_customer": {
+                  "type": "string",
+                  "nullable": true
                 }
               },
-              "application/*+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SportArea"
+              "additionalProperties": false
+            },
+            "SportArea": {
+              "required": [
+                "sa_customer_name",
+                "sa_location"
+              ],
+              "type": "object",
+              "properties": {
+                "sa_id": {
+                  "type": "integer",
+                  "format": "int32"
+                },
+                "sa_location": {
+                  "maxLength": 255,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sa_customer_name": {
+                  "maxLength": 255,
+                  "minLength": 1,
+                  "type": "string"
                 }
-              }
-            }
-          },
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
-        },
-        "delete": {
-          "tags": [
-            "SportArea"
-          ],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "schema": {
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Success"
-            }
-          }
-        }
-      },
-      "/api/SportArea/id": {
-        "get": {
-          "tags": [
-            "SportArea"
-          ],
-          "parameters": [
-            {
-              "name": "id",
-              "in": "query",
-              "schema": {
-                "type": "integer",
-                "format": "int32"
-              }
-            }
-          ],
-          "responses": {
-            "200": {
-              "description": "Success"
+              },
+              "additionalProperties": false
             }
           }
         }
       }
-    },
-    "components": {
-      "schemas": {
-        "Reserv": {
-          "required": [
-            "res_customer",
-            "res_date",
-            "res_name"
-          ],
-          "type": "object",
-          "properties": {
-            "res_id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "res_name": {
-              "maxLength": 255,
-              "minLength": 1,
-              "type": "string"
-            },
-            "res_customer": {
-              "maxLength": 255,
-              "minLength": 1,
-              "type": "string"
-            },
-            "res_date": {
-              "maxLength": 255,
-              "minLength": 1,
-              "type": "string"
-            },
-            "res_sportArea": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          "additionalProperties": false
-        },
-        "Reservation": {
-          "type": "object",
-          "properties": {
-            "res_id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "res_name": {
-              "type": "string",
-              "nullable": true
-            },
-            "res_location": {
-              "type": "string",
-              "nullable": true
-            },
-            "res_date": {
-              "type": "string",
-              "nullable": true
-            },
-            "res_customer": {
-              "type": "string",
-              "nullable": true
-            }
-          },
-          "additionalProperties": false
-        },
-        "SportArea": {
-          "required": [
-            "sa_customer_name",
-            "sa_location"
-          ],
-          "type": "object",
-          "properties": {
-            "sa_id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "sa_location": {
-              "maxLength": 255,
-              "minLength": 1,
-              "type": "string"
-            },
-            "sa_customer_name": {
-              "maxLength": 255,
-              "minLength": 1,
-              "type": "string"
-            }
-          },
-          "additionalProperties": false
-        }
-      }
-    }
-  }
 
 
 
