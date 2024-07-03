@@ -369,8 +369,8 @@ Database Setup Scripts:
     );
 
 
-  INSERT INTO `sportareatable` VALUES (1,'Plaza 2-C','John Doe'),(3,'Plaza 5-D','James Doe');
-  INSERT INTO `restable` VALUES (1,'string','string','string',1),(3,'test','test','test',3);
+    INSERT INTO `sportareatable` VALUES (1,'Plaza 2-C','John Doe'),(3,'Plaza 5-D','James Doe');
+    INSERT INTO `restable` VALUES (1,'string','string','string',1),(3,'test','test','test',3);
 
 
 ## InstallationandConfigurationInstructions
